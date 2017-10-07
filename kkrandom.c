@@ -48,7 +48,9 @@ int main(int argc, char **argv)
     for (i=0; i<ireqpwdlen; ){
         inum = rand();
         ipos = inum % (ipwdstrlen - 1);
+        // パスワード用の1文字を取得
         ich = *(pwdstr + ipos);
+        // 同一文字コードがパスワードに含まれないようにチェックする。
         pstr = strchr(pwdbuff, ich);
         if (pstr == NULL) {
             pwdbuff[strlen(pwdbuff)] = ich;
