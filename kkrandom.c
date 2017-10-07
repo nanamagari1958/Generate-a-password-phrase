@@ -1,5 +1,5 @@
 /**********************************************************************
-* FUNCTION : kkramdom main function
+* FUNCTION : kkrandom main function
 * PURPOSE  : generate password string
 * USAGE    : % kkrandom password-length
 *              MAX. password length is 20
